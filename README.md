@@ -45,7 +45,7 @@ Using groupby and sorting to find out the most used hours of the day, it was fou
 After exporting the data to a csv, an RDS postgres instance was deployed on AWS using the free tier service.
 It was connected to through the colaboratory notebook using this code:
 
-'''
+```
 pip install psycopg2
 
 import psycopg2
@@ -57,11 +57,12 @@ connection = psycopg2.connect(
     database='torontobikeshare'
     )
 cursor=connection.cursor()
-'''
+```
 
 Following that a table was created in the database following the structure of the exported bikeshare dataframe. 
 The schema can be viewed using this code:
-'''
+
+```
 #getting schema info
 sql = """
 SELECT "table_name","column_name", "data_type", "table_schema"
@@ -70,11 +71,11 @@ WHERE "table_schema" = 'public'
 ORDER BY table_name  
 """
 pd.read_sql(sql, con=connection)
-'''
+```
 
 Now the data is loaded in and can be queried like this:
 
-'''
+```
 #querying
 sql = """
 SELECT *
@@ -82,7 +83,7 @@ FROM bikedata
 limit 5
 """
 pd.read_sql(sql, con=connection)
-'''
+```
 
 ## **Tableau Story:**
 
