@@ -38,36 +38,7 @@ In order to look at the data as a result of the date and time, new columns were 
 
 Table Outputs & Aggregations:
 
-Using groupby and sorting to find out the most used hours of the day, it was found unsurprisingly that 5 pm, 6pm and 4 pm were the busiest hours along with 8 am as the 4th busiest hour explaining rush hour, while the 5th busiest hour was at noon. Potentially due to lunch time strolls. 
-
-|StartHour |Count of Records|
-| -------- | -------------- |
-|    17    |     386518     |          
-|    18    |     303806     |
-|    16    |     294533     |
-|     8    |     258620     |          
-|    12	   |     239514     |
-     19	         237631
-     13	         232908
-     21	         218550
-     20	         218028
-     15	         217241
-     14	         200808
-      9	         181481
-     22	         172139
-     11	         158605
-     23	         120756
-     10	         120078
-      7	         102678
-      0	          79588
-      1	          56565
-      2	          42976
-      6	          38946
-      3	          27681
-      5	          19384
-      4	          17825
-
-Next, a table was created showing the seasonal variance for the most used bike stations. Taking the 10 most used stations and grouping their usage by quarter, you can clearly see the same seasonal trends in the data. The 3rd quarter is highest and 1st quarter is lowest while the 2nd and 4th quarter are closer in number, however the 2nd quarter generally falls short of the 4th. Making a table to determine the top 3 most used routes and their seasonal variance. The top 3 routes turned out to be, Yonge and Wellesley to Sherbourne and Wellesley, Front St and Blue Jays Way to Union Station and lastly Bathurst and Queens Quay to York and Queens Quay. Their seasonal variance show similar trends as were mention previously. The final table output was looking at total revenue from extra usage fees by quarter and this total across all quarters came to $1,429,748.00. The 3rd quarter brought in the most money with 2nd, 4th and 1st quarters bringing in money accordingly.
+Using groupby and sorting to find out the most used hours of the day, it was found unsurprisingly that 5 pm, 6pm and 4 pm were the busiest hours along with 8 am as the 4th busiest hour explaining rush hour, while the 5th busiest hour was at noon. Potentially due to lunch time strolls. Next, a table was created showing the seasonal variance for the most used bike stations. Taking the 10 most used stations and grouping their usage by quarter, you can clearly see the same seasonal trends in the data. The 3rd quarter is highest and 1st quarter is lowest while the 2nd and 4th quarter are closer in number, however the 2nd quarter generally falls short of the 4th. Making a table to determine the top 3 most used routes and their seasonal variance. The top 3 routes turned out to be, Yonge and Wellesley to Sherbourne and Wellesley, Front St and Blue Jays Way to Union Station and lastly Bathurst and Queens Quay to York and Queens Quay. Their seasonal variance show similar trends as were mention previously. The final table output was looking at total revenue from extra usage fees by quarter and this total across all quarters came to $1,429,748.00. The 3rd quarter brought in the most money with 2nd, 4th and 1st quarters bringing in money accordingly.
 
 Postgres Database:
 
