@@ -48,6 +48,7 @@ It was connected to through the colaboratory notebook using this code:
 pip install psycopg2
 
 import psycopg2
+
 connection = psycopg2.connect(
     host = 'database-1.cglpfnjcmmha.us-east-2.rds.amazonaws.com',
     port = 5432,
@@ -55,6 +56,7 @@ connection = psycopg2.connect(
     password = 'bikeshare',
     database='torontobikeshare'
     )
+
 cursor=connection.cursor()
 
 Following that a table was created in the database following the structure of the exported bikeshare dataframe. 
@@ -67,25 +69,33 @@ FROM INFORMATION_SCHEMA.COLUMNS
 WHERE "table_schema" = 'public'
 ORDER BY table_name  
 """
+
 pd.read_sql(sql, con=connection)
 
 Now the data is loaded in and can be queried like this:
 
 #querying
+
 sql = """
 SELECT *
 FROM bikedata
 limit 5
 """
+
 pd.read_sql(sql, con=connection)
 
 Tableau Story
 
+As requested a dashboard was created on Tableau visualizing usage based on hour of the day, user type and over the time period of the whole dataset which can be filtered by any specific time period. It also displays the most used bike stations and routes as well as the most common occuring extra charge fee amounts. Lastly it shows a heatmap of the bike stations in Toronto varying in color and size depending on the amount of usage.
+
+The link for the tableau dashboard can be found here: https://public.tableau.com/views/TorontoBikeshareDataAnalysis/Story1?:display_count=y&:origin=viz_share_link
+
 QGIS Map
-
-
-Conclusions
-
-
+As the last deliverable a geographical visualiation of the data was made using QGIS 3.4 software. Using the latitude and longitude points to map all the bikeshare locations and also indicate the 10 most popular stations as well as the 3 most popular routes resulted in an interesting visual. What was also interesting is that the 3 most used routes all go east.
 
 Future Work
+
+* Determining the number of bikes being docked at a station at any given time, this would help with the distribution of bikes to different locations and knowing how many will be needed, this can be accomplished by utilizing more of the data from BikeShare API endpoint
+* Time Series Analysis on Usages
+* predicting usage rates for new bike station locations
+* 
