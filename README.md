@@ -1,5 +1,5 @@
 # **Project Brief**
-### **Aidan Robertson Friday April 10th 2020**
+### **Aidan Robertson  Friday April 10th 2020**
 ## **Objectives:**  
   **Analysis**
  * Tabulate bike share usage by hour of day in descending order
