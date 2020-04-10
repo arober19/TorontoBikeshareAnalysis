@@ -103,9 +103,13 @@ The link for the tableau dashboard can be found here: https://public.tableau.com
 
 ## **QGIS Map:**
 
-As the last deliverable, a geographical visualization was made using QGIS 3.4 software. Using the latitude and longitude points to map all the bikeshare locations and also indicate the 10 most popular stations as well as the 3 most popular routes resulted in an interesting visual. What was also interesting is that the 3 most used routes all go east.
+As the last deliverable, a two geographical visualizations were made using QGIS 3.4 software. The first map using the latitude and longitude points to map all the bikeshare locations and the second map indicating the 10 most popular stations as well as the 3 most popular routes resulted in an interesting visual. What was also interesting is that the 3 most used routes all go east.
 
-![TorontoBikeshareStationsMapping](https://user-images.githubusercontent.com/54183001/78968168-ee1f3e80-7ad1-11ea-9a11-a29913ee965a.jpg)
+
+![allstations](https://user-images.githubusercontent.com/54183001/78999558-e3d46300-7b18-11ea-91a9-13d4f138acde.jpg)
+
+
+![mostusedstationandroutes](https://user-images.githubusercontent.com/54183001/78999669-1c743c80-7b19-11ea-8cbb-37c95d7b3fa3.jpg)
 
 ## **Future Work:**
 
