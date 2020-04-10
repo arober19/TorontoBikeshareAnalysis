@@ -94,6 +94,8 @@ QGIS Map:
 
 As the last deliverable a geographical visualiation of the data was made using QGIS 3.4 software. Using the latitude and longitude points to map all the bikeshare locations and also indicate the 10 most popular stations as well as the 3 most popular routes resulted in an interesting visual. What was also interesting is that the 3 most used routes all go east.
 
+![TorontoBikeshareStationsMapping](https://user-images.githubusercontent.com/54183001/78968168-ee1f3e80-7ad1-11ea-9a11-a29913ee965a.jpg)
+
 Future Work:
 
 * Determining the number of bikes being docked at a station at any given time, this would help with the distribution of bikes to different locations and knowing how many will be needed, this can be accomplished by utilizing more of the data from BikeShare API endpoint
